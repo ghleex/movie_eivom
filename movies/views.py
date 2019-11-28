@@ -18,13 +18,13 @@ def main(request):
     
     # 두 번째 줄
     # 전체 영화 불러오기
-    candidates = Movie.objects.all().order_by('-release_date').order_by('rate')[:25]
+    candidates = Movie.objects.all().order_by('-release_date').order_by('-rate')[:25]
     tmp = []
     for candidate in candidates:
         tmp.append(candidate)
     
     recommends = []
-    while len(recommends) < 5:
+    while len(recommends) < 7:
         rec = random.choice(tmp)
         if rec not in recommends:
             recommends.append(rec)
