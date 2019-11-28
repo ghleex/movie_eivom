@@ -9,7 +9,7 @@
 
 * Django를 이용한 영화 추천 웹 사이트 구축한다.
 * API를 사용하여 seed data 수집한다.
-  * TMDB API, 네이버 영화 검색 API, The Movie DB API, 영화진흥위원회 API, OpenWeatherMap API
+  * TMDB API, 네이버 영화 검색 API, 영화진흥위원회 API
 * **Django ORM을 사용**하여 Database에 접근 / data읽기 / filter
 
 
