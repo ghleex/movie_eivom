@@ -84,9 +84,9 @@
   "model": "movies.nowplaying20",
   "pk": 10,
   "fields": {
-    "title": "\ub300\ud1b5\ub839\uc758 7\uc2dc\uac04",
-    "code": "M000075316",
-    "image": "https://t1.daumcdn.net/movie/bf847997bb93494b9cb7fdc39d65667d1572496298342"
+    "title": "\uc704!",
+    "code": "M000075763",
+    "image": "https://t1.daumcdn.net/movie/72d980a96557b44586b91164b0fc9b2fb7622edb"
   }
 },
 {
@@ -138,9 +138,9 @@
   "model": "movies.nowplaying20",
   "pk": 16,
   "fields": {
-    "title": "\uc0bd\uc9c8",
-    "code": "M000075456",
-    "image": "https://t1.daumcdn.net/movie/c389eecb7c2445a4a00f292bf5eb70981555822031270"
+    "title": "\uc2dc\ube4c",
+    "code": "M000075300",
+    "image": "https://image.tmdb.org/t/p/original/b6biLaOJnn0dIXh3kSOx4tSggL6.jpg"
   }
 },
 {

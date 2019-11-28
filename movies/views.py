@@ -15,6 +15,11 @@ from bs4 import BeautifulSoup
 def main(request):
     # 첫 번째 줄
     nowplays = NowPlaying20.objects.all()
+    nowplays_shuffle = []
+    while len(nowplays_shuffle) < 20:
+        nowplay = random.choice(nowplays)
+        if nowplay not in nowplays_shuffle:
+            nowplays_shuffle.append(nowplay)
     
     # 두 번째 줄
     # 전체 영화 불러오기
@@ -38,7 +43,7 @@ def main(request):
             shows.append(utube)
 
     # 넘기기
-    context = {'nowplays': nowplays, 'recommends': recommends, 'show1': shows[0], 'show2': shows[1], 'show3': shows[2], 'show4': shows[3]}
+    context = {'nowplays': nowplays_shuffle, 'recommends': recommends, 'show1': shows[0], 'show2': shows[1], 'show3': shows[2], 'show4': shows[3]}
     return render(request, 'movies/main.html', context)
 
 
