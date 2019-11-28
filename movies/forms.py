@@ -64,7 +64,7 @@ class MovieForm(forms.ModelForm):
         )
     )
     poster_path = forms.CharField(
-        label='영화 이미지 URL',
+        label='영화 포스터 URL',
         max_length=200,
         required=False,
         widget=forms.TextInput(
@@ -75,13 +75,13 @@ class MovieForm(forms.ModelForm):
         )
     )
     backdrop_path = forms.CharField(
-        label='영화 배경 URL',
+        label='영화 BACKDROP URL',
         max_length=200,
         required=False,
         widget=forms.TextInput(
             attrs={
                 'class': 'movie-backdrop',
-                'placeholder': '영화 배경 이미지 주소를 입력하세요.',
+                'placeholder': '영화 BACKDROP 이미지 주소를 입력하세요.',
             }
         )
     )
