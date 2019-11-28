@@ -44,65 +44,65 @@
       height: auto;
   }
 
-@font-face {
-  font-family: neon;
-  src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/707108/neon.ttf);
-}
-
-.container-np {
-  display: table-cell;
-  text-align: center;
-  vertical-align: middle;
-}
-
-.neon {
-  font-family: neon;
-  color: #FB4264;
-  font-size: 3vw;
-  line-height: 3vw;
-  text-shadow: 0 0 1vw #F40A35;
-}
-
-.neon {
-  animation: neon 1s ease infinite;
-  -moz-animation: neon 1s ease infinite;
-  -webkit-animation: neon 1s ease infinite;
-}
-
-@keyframes neon {
-  0%,
-  100% {
-    text-shadow: 0 0 1vw #FA1C16, 0 0 3vw #FA1C16, 0 0 10vw #FA1C16, 0 0 10vw #FA1C16, 0 0 .4vw #FED128, .5vw .5vw .1vw #806914;
-    color: #FED128;
+  @font-face {
+    font-family: neon;
+    src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/707108/neon.ttf);
   }
-  50% {
-    text-shadow: 0 0 .5vw #800E0B, 0 0 1.5vw #800E0B, 0 0 5vw #800E0B, 0 0 5vw #800E0B, 0 0 .2vw #800E0B, .5vw .5vw .1vw #40340A;
-    color: #806914;
-  }
-}
-.main_info_section {padding: 100px 0 60px;}
-.main_info_icon {margin: 0 auto; width: 45px; height: 45px;}
-.main_info_icon .icon_g {margin-top: 5px; width: 35px; height: 35px;;}
-.main_info_title {margin: 4px 0 8px;}
-.main_info_text {font-size: 14px; line-height: 1.5em;}
-.bestseller_item {display: block; position: relative; border-radius: 8px 8px; overflow: hidden;}
-.bestseller_item:hover .bestseller_info {opacity: 1}
-.bestseller_item {padding-bottom: 0;}
 
-@media (max-width: 500px) {
-  .tgt {
-    position: absolute;
-    top: 40%;
-    center;
+  .container-np {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
   }
-}
-@media (min-width: 500px) {
-  .tgt {
-    position: absolute;
-    top: 60%;
-    center;
+
+  .neon {
+    font-family: neon;
+    color: #FB4264;
+    font-size: 3vw;
+    line-height: 3vw;
+    text-shadow: 0 0 1vw #F40A35;
   }
-}
+
+  .neon {
+    animation: neon 1s ease infinite;
+    -moz-animation: neon 1s ease infinite;
+    -webkit-animation: neon 1s ease infinite;
+  }
+
+  @keyframes neon {
+    0%,
+    100% {
+      text-shadow: 0 0 1vw #FA1C16, 0 0 3vw #FA1C16, 0 0 10vw #FA1C16, 0 0 10vw #FA1C16, 0 0 .4vw #FED128, .5vw .5vw .1vw #806914;
+      color: #FED128;
+    }
+    50% {
+      text-shadow: 0 0 .5vw #800E0B, 0 0 1.5vw #800E0B, 0 0 5vw #800E0B, 0 0 5vw #800E0B, 0 0 .2vw #800E0B, .5vw .5vw .1vw #40340A;
+      color: #806914;
+    }
+  }
+  .main_info_section {padding: 100px 0 60px;}
+  .main_info_icon {margin: 0 auto; width: 45px; height: 45px;}
+  .main_info_icon .icon_g {margin-top: 5px; width: 35px; height: 35px;;}
+  .main_info_title {margin: 4px 0 8px;}
+  .main_info_text {font-size: 14px; line-height: 1.5em;}
+  .bestseller_item {display: block; position: relative; border-radius: 8px 8px; overflow: hidden;}
+  .bestseller_item:hover .bestseller_info {opacity: 1}
+  .bestseller_item {padding-bottom: 0;}
+
+  @media (max-width: 500px) {
+    .tgt {
+      position: absolute;
+      top: 40%;
+      center;
+    }
+  }
+  @media (min-width: 500px) {
+    .tgt {
+      position: absolute;
+      top: 60%;
+      center;
+    }
+  }
 {% endblock style %}
 
 {% block content %}
@@ -124,7 +124,7 @@
       </div>
       <div class="content tgt">
         <div class="container-np">
-          <div class="neon">Now Showing! </div>
+          <div class="neon">Now Showing!ZZ</div>
         </div>
         <h3 class="text-light mt-2 mb-3 font5">{{ nowplay.title }}</h3>
         <a href="https://ticket2.movie.daum.net/Movie/MovieMain.aspx?M_ID={{ nowplay.code }}#seq=2"
@@ -318,33 +318,4 @@
 </div>
 
 <hr>
-
-<script>
-  var player;
-  function onYouTubeIframeAPIReady() {
-      player = new YT.Player('player', {
-          events: {
-              'onStateChange': onPlayerStateChange
-          }
-      });
-  }
-
-  function onPlayerReady(event) {
-      event.target.playVideo();
-  }
- 
-  var done = false;
-  function onPlayerStateChange(event) {
-      if (event.data == YT.PlayerState.PLAYING && !done) {
-          $('#myCarousel').carousel('pause');
-          done = true;
-      }
-  }
-
-var touch = Modernizr.touch;
-$('.img-holder').imageScroll({
-  imageAttribute: (touch === true) ? 'image-mobile' : 'image',
-  touch: touch
-});
-</script>
 {% endblock %}
