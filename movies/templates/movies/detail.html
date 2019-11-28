@@ -129,7 +129,7 @@
               <li class="media">
                 <div class="media-body row">
                   <div class="col-4">
-                  <h6 class="mt-0 mb-1">{{ rating.user }}</h6>
+                  <h6 class="mt-0 mb-1" onclick="location.href='{% url 'accounts:detail' rating.user.pk %}'">{{ rating.user }}</h6>
                   평점: {{ rating.score }} 점
                   </div>
                   <div class="col-8">
