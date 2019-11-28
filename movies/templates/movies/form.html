@@ -10,6 +10,7 @@
 {% endblock title %}
 
 {% block content %}
+<div class="container">
   {% if request.resolver_match.url_name == 'create' %}
     <h1>영화 정보 생성</h1>
   {% else %}
@@ -27,5 +28,5 @@
   </form>
   <hr>
   <a class="btn btn-primary" href="{% url 'movies:main' %}">BACK</a>    
-  
+</div>
 {% endblock %}

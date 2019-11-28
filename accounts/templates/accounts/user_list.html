@@ -3,15 +3,17 @@
 {% block title %}전체 사용자 보기{% endblock title %}
 
 {% block content %}
-<h1>전체 사용자 보기</h1>
-{% for user_info in users %}
-<div class="row">
-    <div class="col-sm-6 mt-1">
-        <div class="card">
-            <div class="card-body">
-                <h5 class="card-title">{{ user_info.username }}</h5>
-                <p class="card-text">{{ user_info.email }}</p>
-                <a href="{% url 'accounts:detail' user_info.pk %}" class="btn btn-primary">상세보기</a>
+<div class="container">
+    <h1>전체 사용자 보기</h1>
+    {% for user_info in users %}
+    <div class="row">
+        <div class="col-sm-6 mt-1">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">{{ user_info.username }}</h5>
+                    <p class="card-text">{{ user_info.email }}</p>
+                    <a href="{% url 'accounts:detail' user_info.pk %}" class="btn btn-primary">상세보기</a>
+                </div>
             </div>
         </div>
     </div>
