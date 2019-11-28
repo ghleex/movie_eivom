@@ -5,4 +5,7 @@ SECRET_KEY = config('SECRET_KEY')
 
 DEBUG = False
 
-ALLOWED_HOSTS = ['movie-eivom.vqxyqc483b.ap-northeast-2.elasticbeanstalk.com']
+ALLOWED_HOSTS = []
+
+import django_heroku
+django_heroku.settings(locals())

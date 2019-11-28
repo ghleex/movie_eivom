@@ -131,3 +131,6 @@ LOGIN_REDIRECT_URL = 'movies:main'
 SITE_ID = 1
 
 STARFIELD_STARS = 10
+
+import django_heroku
+django_heroku.settings(locals())
