@@ -115,7 +115,6 @@
 <div class="swiper-container swiper1">
   <div class="swiper-wrapper">
     {% for nowplay in nowplays %}
-    {% if nowplay.image %}
     <!-- <div class="swiper-slide js-imgSizeSame"
       style="background:url('{{ nowplay.image }}') no-repeat; width: 500px; height: 300px; background-size: 500px 300px;"> -->
     <div class="swiper-slide">
@@ -124,14 +123,13 @@
       </div>
       <div class="content tgt">
         <div class="container-np">
-          <div class="neon">Now Showing!ZZ</div>
+          <div class="neon">Now Showing!</div>
         </div>
         <h3 class="text-light mt-2 mb-3 font5">{{ nowplay.title }}</h3>
         <a href="https://ticket2.movie.daum.net/Movie/MovieMain.aspx?M_ID={{ nowplay.code }}#seq=2"
           class="btn btn-outline-light mb-3 font5">예매하기</a>
       </div>
     </div>
-    {% endif %}
     {% endfor %}
   </div>
   <!-- Add Arrows -->
@@ -166,7 +164,7 @@
 <!-- Swiper -->
 <!-- Carousel -->
 
-<h2 class="text-center text-dark mt-5 mb-5 font5"><a class="text-dark font5" href="#myCarousel" onMouseOver="this.innerHTML='EIVOMer의 추천영화'" onMouseOut="this.innerHTML='아이봄러 추천 영화'">EIVOMer아이봄러 추천 영화</a></h2>
+<h2 class="text-center text-dark mt-5 mb-5 font5"><a class="text-dark font5" href="#myCarousel" onMouseOver="this.innerHTML='EIVOMer의 추천영화'" onMouseOut="this.innerHTML='아이봄러 추천 영화'">EIVOMer의 추천 영화</a></h2>
 <div id="myCarousel" class="carousel slide w-75 mx-auto" data-ride="carousel">
     <div class="carousel-inner" role="listbox">
         <!-- 02_carousel -->
@@ -304,7 +302,7 @@
 																1년 서버보증
 															</p>
 							<p class="main_info_text">
-																AWS의 규정상 1년간 서버가 유지됩니다.<br>사이트 유효기간은 2019-11-27로 부터 12개월입니다.
+																Heroku의 규정상 1년간 서버가 유지됩니다.<br>사이트 유효기간은 2019-11-28로 부터 12개월입니다.
 															</p>
 						</div>
 					</div>

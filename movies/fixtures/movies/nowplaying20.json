@@ -68,7 +68,7 @@
   "fields": {
     "title": "\uc544\uc774\ub9ac\uc2dc\ub9e8",
     "code": "M000075503",
-    "image": ""
+    "image": "https://image.tmdb.org/t/p/original/iLLDiO4dbUfFEnRug8DuvFEl1NB.jpg"
   }
 },
 {
@@ -86,7 +86,7 @@
   "fields": {
     "title": "\ub300\ud1b5\ub839\uc758 7\uc2dc\uac04",
     "code": "M000075316",
-    "image": ""
+    "image": "https://t1.daumcdn.net/movie/bf847997bb93494b9cb7fdc39d65667d1572496298342"
   }
 },
 {
@@ -95,7 +95,7 @@
   "fields": {
     "title": "\ub098\ub97c \ucc3e\uc544\uc918",
     "code": "M000069275",
-    "image": ""
+    "image": "https://image.tmdb.org/t/p/original/7K6Toqo2dgIPgVZB0uEqSLGPsno.jpg"
   }
 },
 {
@@ -104,7 +104,7 @@
   "fields": {
     "title": "\uc5b4\uc81c \uc77c\uc740 \ubaa8\ub450 \uad1c\ucc2e\uc544",
     "code": "M000075455",
-    "image": ""
+    "image": "https://image.tmdb.org/t/p/original/Q5RqubRdtLPZZdkf3a93nIyTUC.jpg"
   }
 },
 {
@@ -122,7 +122,7 @@
   "fields": {
     "title": "\ud5e4\ub85c\ub2c8\ubaa8",
     "code": "M000075351",
-    "image": ""
+    "image": "https://t1.daumcdn.net/movie/3565cd7dfe3f4a51ba44cbd8bc8f33cb1574302230298"
   }
 },
 {
@@ -140,16 +140,16 @@
   "fields": {
     "title": "\uc0bd\uc9c8",
     "code": "M000075456",
-    "image": ""
+    "image": "https://t1.daumcdn.net/movie/c389eecb7c2445a4a00f292bf5eb70981555822031270"
   }
 },
 {
   "model": "movies.nowplaying20",
   "pk": 17,
   "fields": {
-    "title": "\uc870\ucee4 ",
+    "title": "\uc870\ucee4",
     "code": "M000075112",
-    "image": ""
+    "image": "https://image.tmdb.org/t/p/original//f5F4cRhQdUbyVbB5lTNCwUzD6BP.jpg"
   }
 },
 {
@@ -167,7 +167,7 @@
   "fields": {
     "title": "\ud504\ub780\uce58\uc2a4\ucf54 \uad50\ud669 : \ub9e8 \uc624\ube0c \ud788\uc2a4 \uc6cc\ub4dc",
     "code": "M000075691",
-    "image": ""
+    "image": "https://t1.daumcdn.net/movie/08b1a05ce84f4f17a05b28ab126dab6b1572504784824"
   }
 },
 {
