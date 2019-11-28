@@ -3,6 +3,13 @@
 
 {% block title %}{{ userDetail.nickname }}의 DETAIL{% endblock title %}
 
+{% block style %}
+    @media (min-width: 500px)
+    .goto {
+        display: none;
+    }
+{% endblock style %}
+
 {% block content %}
 <div class="container">
     <div class="row">
@@ -39,7 +46,7 @@
             <br>
         </div>
         {% endif %}
-        <div class="col-6 mt-4 font5">
+        <div class="col-6 mt-4 font5 goto">
             <ul class="tabs">
                 <ul class="tab col s3"><a href="#arr2">
                         <h5 class="tab-font text-secondary">좋아요를 표시한 영화</h5>
@@ -75,7 +82,7 @@
                 </div>
                 <div class="card-content" style=" padding-left: 20px; padding-right: 20px;">
                     <span class="card-title">{{ movie.title }}</span><br>
-                    <p>평점 : {{ movie.rate }}</p>
+                    <p>평점: {{ movie.rate }}</p>
                     <a href="{% url 'movies:detail' movie.pk %}" class="btn-floating btn-small">
                         <i class="material-icons">보러가기</i></a>
                 </div>
@@ -87,7 +94,7 @@
         {% endif %}
     </div>
 
-    <p class="title is-4 has-text-white mt-5 font5" id="arr1">{{ userDetail.nickname }} 가 작성한 리뷰</p>
+    <p class="title is-4 has-text-white mt-5 font5" id="arr1">{{ userDetail.nickname }}가 작성한 리뷰</p>
     <div class="row mt-3 font5">
         {% if userDetail.rating_set.all %}
         <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
@@ -98,8 +105,8 @@
                 </div>
                 <div class="card-content" style=" padding-left: 20px; padding-right: 20px;">
                     <span class="card-title">{{ comment.movie.title }}</span>
-                    <p style="font-size: 15px;">리뷰 내용 : {{ comment.comment }}</p>
-                    <div class="btn-small" style="font-size:15px;">제 점수는요 : {{ comment.score }}</div>
+                    <p style="font-size: 15px;">리뷰 내용: {{ comment.comment }}</p>
+                    <div class="btn-small" style="font-size:15px;">제 점수는요: {{ comment.score }}</div>
                     <a href="{% url 'movies:detail' comment.movie.pk %}" class="btn-floating btn-small"><i
                             class="material-icons">보러가기</i></a>
                 </div>
