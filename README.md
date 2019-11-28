@@ -26,6 +26,14 @@
 
 ![노트북 (5) 2](https://user-images.githubusercontent.com/52685245/69785859-7d4f4800-11fc-11ea-8190-d2cdf912404f.png)
 
+
+
+![EIOVM_MOVIE](https://user-images.githubusercontent.com/52685206/69823235-a5b26300-124b-11ea-8574-57e0af347426.png)
+
+
+
+
+
 ## 4. 주요 기능
 
 > Database에 있는 Data들을 사용하기 위하여 orm을 이용해 Database에 접근하고, 필요한 Data를 읽어와 다양한 영화 추천 서비스 기능을 개발
